@@ -5,7 +5,9 @@ using namespace std;
 
 Cipher :: Cipher() {}
 
-void Cipher :: setPlaintext(const string ptext) {}
+void Cipher :: setPlaintext(const string ptext) {
+  plaintext=ptext;
+}
 
 string Cipher :: noSpace() {
   string nospace="";
