@@ -1,10 +1,17 @@
-private:
+#ifndef Cipher_H
+#define Cipher_H
+#include <string>
+using namespace std;
+
+class Cipher
+{
+      private:
       int count1=0;
       int count2=0;
       int l;
       int length;
 
-public:
+      public:
       Cipher();
       void setPlaintext(const string ptext);
       string noSpace();
@@ -16,3 +23,7 @@ public:
       int revPos();
       string enCipher();
       string deCipher();
+
+};
+#endif
+      
